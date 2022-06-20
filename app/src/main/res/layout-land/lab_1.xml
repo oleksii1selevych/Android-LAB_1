@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray"
+    android:weightSum="13">
+
+    <TextView
+        android:id="@+id/textViewExpression"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/dark_gray"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewNumeric"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical|end"
+        android:text="@string/default_numeric_value"
+        android:textSize="25sp"
+        android:textColor="@color/gray_black"/>
+
+    <LinearLayout
+        style="@style/linearLayoutStyle">
+        <Button
+            style="@style/calculatorButtonHorizontal"
+            android:id="@+id/button_delete_digit"
+            android:text="@string/button_delete"/>
+        <Button
+            style="@style/calculatorButtonHorizontal"
+            android:id="@+id/button_remove_last_number"
+            android:text="@string/button_remove_last_number" />
+        <Button
+            android:id="@+id/button_remove_all"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_remove_all" />
+        <Button
+            android:id="@+id/button_division"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_division" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/linearLayoutStyle">
+        <Button
+            android:id="@+id/button_seven"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_seven" />
+        <Button
+            android:id="@+id/button_eight"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_eight" />
+        <Button
+            android:id="@+id/button_nine"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_nine" />
+        <Button
+            android:id="@+id/button_multiplication"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_multiplication" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/linearLayoutStyle">
+        <Button
+            android:id="@+id/button_four"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_four" />
+        <Button
+            android:id="@+id/button_five"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_five" />
+        <Button
+            android:id="@+id/button_six"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_six" />
+        <Button
+            android:id="@+id/button_substraction"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_substraction" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/linearLayoutStyle">
+        <Button
+            android:id="@+id/button_one"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_one" />
+        <Button
+            android:id="@+id/button_two"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_two" />
+        <Button
+            android:id="@+id/button_three"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_three" />
+        <Button
+            android:id="@+id/button_sum"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_sum" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/linearLayoutStyle">
+        <Button
+            android:id="@+id/button_negation"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_negation" />
+        <Button
+            android:id="@+id/button_zero"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_zero" />
+        <Button
+            android:id="@+id/button_comma"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_dot" />
+        <Button
+            android:id="@+id/button_equality"
+            style="@style/calculatorButtonHorizontal"
+            android:text="@string/button_equality" />
+    </LinearLayout>
+</LinearLayout>
